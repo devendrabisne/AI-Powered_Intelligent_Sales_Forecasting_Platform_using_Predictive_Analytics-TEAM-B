@@ -3,10 +3,10 @@ name: Python Tests
 
 on:
   push:
-    branches: ["devendra-qa-tests"]
+    branches: ["main", "devendra-qa-tests"]
   pull_request:
-    branches: ["devendra-qa-tests"]
-
+    branches: ["main", "devendra-qa-tests"]
+  workflow_dispatch:
 jobs:
   test:
     runs-on: ubuntu-latest
